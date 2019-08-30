@@ -518,9 +518,8 @@ body {
 
 .colorlib-experience,
 .colorlib-skills,
-.colorlib-education,
+.colorlib-projects,
 .colorlib-blog,
-.colorlib-work,
 .colorlib-about,
 .colorlib-services,
 .colorlib-contact{
@@ -577,29 +576,6 @@ body {
 	height: 600px;
 	margin-bottom: 30px;
 }
-.about-desc{
-	h3{
-		font-size: 18px;
-		text-transform: uppercase;
-		letter-spacing: 5px;
-		font-weight: 500;
-	}
-}
-.hire{
-	padding: 2em;
-	background: $brand-color-3;
-	h2{
-		line-height: 1.5;
-	}
-	.btn-hire{
-		color: $brand-black;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		bordeR: 1px solid $brand-black;
-		padding: 2px 10px;
-	}
-}
-
 
 //PANEL
 .fancy-collapse-panel .panel-default > .panel-heading {
@@ -1192,127 +1168,10 @@ margin-left: -20px;
 	}
 }
 
-
 // PROJECT
-.work-menu{
-	span{
-		margin-left: 10px;
-		&:first-child{
-			margin-left: 0;
-		}
-		a{
-			color: $brand-black;
-			&.active{
-				color: $brand-primary;
-			}
-		}
-	}
-}
-.project{
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	position: relative;
-	height: 300px;
-	width: 100%;
-	display: block;
-	margin-bottom: 30px;
-	.desc{
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background: $brand-primary;
-		opacity: 0;
-		@include transition(.3s);
-		.con{
-			padding: 20px;
-			display: block;
-			position: relative;
-			height: 300px;
-			.icon{
-				position: absolute;
-				bottom: 20px;
-				left: 20px;
-				right: 20px;
-				span{
-					display: inline;
-					padding-right: 5px;
-					a{
-						color: lighten($brand-black,20%);
-						padding: 5px;
-						background: rgba(255,255,255,.5);
-						@include border-radius(4px);
-					}
-				}
-				i{
-					font-size: 16px;
-					color: lighten($brand-black,20%);
-				}
-			}
-		}
-		h3{
-			font-family: $font-primary;
-			font-size: 16px;
-			font-weight: 500;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-			-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-			transition: transform 0.3s, opacity 0.3s;
-			-webkit-transform: translate3d(0, -15px, 0);
-			transform: translate3d(0, -15px, 0);
-			margin-bottom: 15px;
-			a{
-				color: $brand-white;
-			}
-		}
-		span{
-			display: block;
-			color: rgba(255,255,255,.7);
-			font-size: 13px;
-			-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-			transition: transform 0.3s, opacity 0.3s;
-			-webkit-transform: translate3d(0, 15px, 0);
-			transform: translate3d(0, 15px, 0);
-			a{
-				color: $brand-black;
-			}
-		}
-		@media screen and(max-width: $screen-sm){
-			opacity: 1;
-			background: rgba(0,0,0,.4);
-			h3{
-				font-style: 28px;
-				-webkit-transform: translate3d(0, 0, 0);
-				transform: translate3d(0, 0, 0);
-				color: $brand-black;
-			}
-			span{
-				-webkit-transform: translate3d(0, 0, 0);
-				transform: translate3d(0, 0, 0);
-			}
-		}
-	}
-	&:hover{
-		.desc{
-			opacity: 1;
-			h3{
-				-webkit-transform: translate3d(0, 0, 0);
-				transform: translate3d(0, 0, 0);
-			}
-			span{
-				-webkit-transform: translate3d(0, 0, 0);
-				transform: translate3d(0, 0, 0);
-			}
-		}
-	}
-}
 .btn-load-more{
 	width: 100%;
 }
-
-
 
 //COUNTER
 #colorlib-counter{
