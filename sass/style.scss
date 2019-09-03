@@ -521,7 +521,6 @@ body {
 .colorlib-projects,
 .colorlib-blog,
 .colorlib-about,
-.colorlib-services,
 .colorlib-contact{
 	padding-top: 4em;
 	padding-bottom: 9em;
@@ -775,48 +774,22 @@ margin-left: -20px;
 	-o-box-shadow: 0px 0px 56px -8px rgba(0,0,0,0.17);
 	box-shadow: 0px 0px 56px -8px rgba(0,0,0,0.17);
 	border-bottom: 2px solid $brand-primary;
-	.icon2{
-		display: block;
-		margin-bottom: 20px;
-		i{
-			font-size: 30px;
-			color: $brand-primary;
-		}
-	}
 	h3{
 		font-family: $font-primary;
 		font-size: 16px;
 		font-weight: 500;
+  }
+	&.color-1{
+		border-bottom: 2px solid $brand-color-1;
 	}
 	&.color-2{
 		border-bottom: 2px solid $brand-color-2;
-		.icon2{
-			i{
-				color: $brand-color-2;
-			}
-		}
 	}
 	&.color-3{
 		border-bottom: 2px solid $brand-color-3;
-		.icon2{
-			i{
-				color: $brand-color-3;
-			}
-		}
 	}
 	&.color-4{
 		border-bottom: 2px solid $brand-color-4;
-		.icon2{
-			i{
-				color: $brand-color-4;
-			}
-		}
-	}
-	&.color-5{
-		border-bottom: 2px solid $brand-color-5;
-	}
-	&.color-6{
-		border-bottom: 2px solid $brand-color-6;
 	}
 }
 
@@ -829,111 +802,7 @@ margin-left: -20px;
 	@media screen and(max-width: $screen-sm){
 		margin-bottom: 4em;
 	}
-	.icon{
-		position: absolute;
-		top: -20px;
-		left: 0;
-		right: 0;
-		width: 100px;
-		height: 50px;
-		display: table;
-		margin: 0 auto;
-		background: $brand-primary;
-		&:before, &:after{
-			position: absolute;
-			left: 0;
-			right: 0;
-			content: '';
-		}
-		&:before{
-			top: -30px;
-			width: 0;
-			height: 0;
-			border-style: solid;
-			border-width: 0 50px 30px 50px;
-			border-color: transparent transparent $brand-primary transparent;
-		}
-		&:after{
-			bottom: -30px;
-			width: 0;
-			height: 0;
-			border-style: solid;
-			border-width: 30px 50px 0 50px;
-			border-color: $brand-primary transparent transparent transparent;
-		}
-		i{
-			font-size: 30px;
-			color: $brand-white;
-			z-index: 1;
-			display: table-cell;
-			vertical-align: middle;
-		}
-	}
-	.desc{
-		margin-top: 60px;
-		h3{
-			font-size: 16px;
-			font-weight: 700;
-			text-transform: uppercase;
-		}
-	}
-	&.color-2{
-		.icon{
-			background: $brand-color-2;
-			&:before{
-				border-color: transparent transparent $brand-color-2 transparent;
-			}
-			&:after{
-				border-color: $brand-color-2 transparent transparent transparent;
-			}
-		}
-	}
-	&.color-3{
-		.icon{
-			background: $brand-color-3;
-			&:before{
-				border-color: transparent transparent $brand-color-3 transparent;
-			}
-			&:after{
-				border-color: $brand-color-3 transparent transparent transparent;
-			}
-		}
-	}
-	&.color-4{
-		.icon{
-			background: $brand-color-4;
-			&:before{
-				border-color: transparent transparent $brand-color-4 transparent;
-			}
-			&:after{
-				border-color: $brand-color-4 transparent transparent transparent;
-			}
-		}
-	}
-	&.color-5{
-		.icon{
-			background: $brand-color-5;
-			&:before{
-				border-color: transparent transparent $brand-color-5 transparent;
-			}
-			&:after{
-				border-color: $brand-color-5 transparent transparent transparent;
-			}
-		}
-	}
-	&.color-6{
-		.icon{
-			background: $brand-color-6;
-			&:before{
-				border-color: transparent transparent $brand-color-6 transparent;
-			}
-			&:after{
-				border-color: $brand-color-6 transparent transparent transparent;
-			}
-		}
-	}
 }
-
 
 //SKILLS--------------------
 .progress-wrap{
