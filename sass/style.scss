@@ -898,6 +898,24 @@ margin-left: -20px;
 		span{
 			color: $brand-color-6;
 		}
+  }
+  &.color-7{
+		background: $brand-color-7;
+		&:after{
+			background: $brand-color-7;
+		}
+		span{
+			color: $brand-color-7;
+		}
+  }
+  &.color-8{
+		background: $brand-color-8;
+		&:after{
+			background: $brand-color-8;
+		}
+		span{
+			color: $brand-color-8;
+		}
 	}
 }
 
